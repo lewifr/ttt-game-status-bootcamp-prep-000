@@ -46,7 +46,7 @@ end
 
 def winner(board)
   result = won?(board)
-  if (result.isa Array)
+  if (result.class == Array)
     board[result[0]]
   else
     nil
