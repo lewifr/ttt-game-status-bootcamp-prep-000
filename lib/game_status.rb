@@ -35,3 +35,7 @@ end
 def full?(board)
   board.all? {|val| !(val.nil? || val == " ")}
 end
+
+def draw?(board)
+  won?(board && !full?(board))
+end
