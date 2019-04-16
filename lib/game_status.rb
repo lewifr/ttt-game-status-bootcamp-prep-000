@@ -31,3 +31,7 @@ def won?(board)
   end
   false
 end
+
+def full?(board)
+  board.all? {|val| !(val.nil? || val == " ")}
+end
