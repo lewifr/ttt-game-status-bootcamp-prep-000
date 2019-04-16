@@ -45,5 +45,10 @@ def over?(board)
 end
 
 def winner(board)
-  board[won?(board)[0]]
+  result = won?(board)
+  if (result.isa Array)
+    board[result[0]]
+  else
+    nil
+  end
 end
